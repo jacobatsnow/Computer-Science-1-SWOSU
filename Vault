@@ -1,0 +1,27 @@
+import time
+while True:
+    password=input("input password")
+    if password.strip().lower() in ['p@ssword']:
+        break
+    print("Invalid input")
+while True:
+    s_quest_1=input("security question 1. length of your mother's big toe in inches rounded to the nearest whole number")
+    if s_quest_1.strip().lower() in ['12']:
+        break
+    print("Invalid input")
+while True:
+    s_quest_2=input("security question 2. what is the name of the beaver that lives under the bridge on second street?")
+    if s_quest_2.strip().lower() in ['jerry']:
+        break
+    print("Invalid input")
+print("Loading Top Secret Intel")
+time.sleep(2)
+print("Kraft mac & cheese cup instructions")
+time.sleep(2)
+print("1. remove lid and cheese sauce mix")
+time.sleep(2)
+print("2.add water to fill line in cup and stir")
+time.sleep(2)
+print("3.microwave, uncovered on high 3 and a half minutes, DO NOT DRAIN")
+time.sleep(2)
+print("4. stir in cheese sauce mix")
