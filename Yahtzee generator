@@ -1,0 +1,87 @@
+import random
+print("YAHTZEE")
+print('')
+random_numbers = [random.randint(1, 6) for _ in range(5)]
+print("dice roll:", random_numbers)
+print('')
+keep_dice=int(input("keep how many"))
+if keep_dice == 0:
+    random_numbers = [random.randint(1, 6) for _ in range(5)]
+    print("dice roll:", random_numbers)
+    print('')
+    keep_dice2=int(input("keep how many"))
+    if keep_dice2 == 0:
+        random_numbers = [random.randint(1, 6) for _ in range(5)]
+        print("dice roll:", random_numbers)
+    if keep_dice2 == 1:
+        random_numbers = [random.randint(1, 6) for _ in range(4)]
+        print("dice roll:", random_numbers)
+    if keep_dice2 == 2:
+        random_numbers = [random.randint(1, 6) for _ in range(3)]
+        print("dice roll:", random_numbers)
+    if keep_dice2 == 3:
+        random_numbers = [random.randint(1, 6) for _ in range(2)]
+        print("dice roll:", random_numbers)
+    if keep_dice2 == 4:
+        random_numbers = [random.randint(1, 6) for _ in range(1)]
+        print("dice roll:", random_numbers)
+    if keep_dice2 == 5:
+        print("record score")
+if keep_dice == 1:
+    random_numbers = [random.randint(1, 6) for _ in range(4)]
+    print("dice roll:", random_numbers)
+    print("")
+    keep_dice3=int(input("keep how many"))
+    if keep_dice3 == 0:
+        random_numbers = [random.randint(1, 6) for _ in range(4)]
+        print("dice roll:", random_numbers)
+    if keep_dice3 == 1:
+        random_numbers = [random.randint(1, 6) for _ in range(3)]
+        print("dice roll:", random_numbers)
+    if keep_dice3 == 2:
+        random_numbers = [random.randint(1, 6) for _ in range(2)]
+        print("dice roll:", random_numbers)
+    if keep_dice3 == 3:
+        random_numbers = [random.randint(1, 6) for _ in range(1)]
+        print("dice roll:", random_numbers)
+    if keep_dice3 == 4:
+        print("input score")
+if keep_dice == 2:
+    random_numbers = [random.randint(1, 6) for _ in range(3)]
+    print("dice roll:", random_numbers)
+    keep_dice3=int(input("keep how many"))
+    if keep_dice3 == 0:
+        random_numbers = [random.randint(1, 6) for _ in range(3)]
+        print("dice roll:", random_numbers)
+    if keep_dice3 == 1:
+        random_numbers = [random.randint(1, 6) for _ in range(2)]
+        print("dice roll:", random_numbers)
+    if keep_dice3 == 2:
+        random_numbers = [random.randint(1, 6) for _ in range(1)]
+        print("dice roll:", random_numbers)
+        if keep_dice3 == 3:
+            print("input score")
+if keep_dice == 3:
+    random_numbers = [random.randint(1, 6) for _ in range(2)]
+    print("dice roll:", random_numbers)
+    keep_dice3=int(input("keep how many"))
+    if keep_dice3 == 0:
+        random_numbers = [random.randint(1, 6) for _ in range(2)]
+        print("dice roll:", random_numbers)
+    if keep_dice3 == 1:
+        random_numbers = [random.randint(1, 6) for _ in range(1)]
+        print("dice roll:", random_numbers)
+    if keep_dice3 == 2:
+        print("input score")
+if keep_dice == 4:
+    random_numbers = [random.randint(1, 6) for _ in range(1)]
+    print("dice roll:", random_numbers)
+    print("")
+    keep_dice3=int(input("keep how many"))
+    if keep_dice3 == 0:
+        random_numbers = [random.randint(1, 6) for _ in range(2)]
+        print("dice roll:", random_numbers)
+    if keep_dice3 == 1:
+        print("input score")
+if keep_dice == 5:
+    print("input score") 
