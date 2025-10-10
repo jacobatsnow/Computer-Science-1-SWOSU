@@ -1,0 +1,63 @@
+import random
+import time
+
+def print_intro():
+    print("You awaken with no memory")
+    print("As you study your surrounding you seem to be in a narrow corridor")
+    print("It's dark and you can barely see 6 feet in front of you")
+
+def get_valid_input(prompt, valid_options):
+    while True:
+        choice = input(f"{prompt} ({', '.join(valid_options)}): ").lower()
+        if choice in valid_options:
+            return choice
+        else:
+            print("Invalid input. Please choose a valid direction.")
+
+def straight_line():
+    print(" | | ")
+    get_valid_input("Choose direction", ["forward", "backward"])
+
+def intersection():
+    print(" | | ")
+    print("=   =")
+    print(" | |")
+    get_valid_input("Choose direction", ["left", "right", "forward", "backward"])
+
+def dead_end():
+    print("  _ ")
+    print(" | |")
+    print("You must go backward.")
+    get_valid_input("Choose direction", ["backward"])
+    
+def encounter():
+    print("From out of the inky darkness comes something unlike anything you've ever seen")
+    print("The beast is stitched together from nightmares and hellfire")
+    print("You turn to flee but the passage behind you has sealed")
+    print("As you cower in fear, you feel your spinal cord being severed")
+    print("You close your eyes and feel a moment of searing pain")
+    print("You open your eyes and find yourself in the furthest pit of hell")
+    print("You spend eternity wondering what you did to end up here")
+
+def escape():
+    print("|EXIT|")
+    print("you see a doorway with a exit sign")
+    print("you push through the door")
+    print("Can you survive what is beyond?")
+
+print_intro()
+
+while True:
+    maze = random.randint(1, 10)
+    if maze in (1, 2, 3):
+        straight_line()
+    elif maze in (4, 5, 6):
+        intersection()
+    elif maze in (7, 8):
+        dead_end()
+    elif maze == 9:
+        encounter()
+        break
+    elif maze == 10:
+        escape()
+        break
